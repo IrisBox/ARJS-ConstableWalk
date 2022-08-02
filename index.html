@@ -47,9 +47,13 @@
     
     <a-assets>
     <img id="print" src="images/fitz_print.jpeg">
+    <img id="walkA-1" src="images/walkA-1.jpg">
+    <img id="walkA-2" src="images/walkA-2.jpg">
     <img id="walkb-1" src="images/walkb-1.jpg">
     <img id="walkb-2" src="images/walkb-2.jpg">
     <img id="walkb-3" src="images/walkb-3.jpg">
+    <img id="walkc-1" src="images/walkc-1.jpg">
+    <img id="walkc-2" src="images/walkc-2.jpg">  
     </a-assets>
 
   <!-- a-frame scene -->
@@ -66,6 +70,12 @@
     rotation="90 180 0"></a-image>
 </a-marker>
 -->
+<a-marker type='barcode' value='14' smooth='false'>
+        <a-image src="#walkA-1" opacity="0.7" scale="-3 2 1" position="1.5 0 -1" rotation="90 180 0"></a-image>
+</a-marker>  
+<a-marker type='barcode' value='15' smooth='false'>
+        <a-image src="#walkA-2" opacity="0.7" scale="-3 2 1" position="1.5 0 -1" rotation="90 180 0"></a-image>
+</a-marker>      
 <a-marker type='barcode' value='16' smooth='false'>
         <a-image src="#walkb-1" opacity="0.7" scale="-3 2 1" position="1.5 0 -1" rotation="90 180 0"></a-image>
 </a-marker>            
@@ -76,6 +86,12 @@
 <a-marker type='barcode' value='18' smooth='false'>
         <a-image src="#walkb-3" opacity="0.7" scale="-3 2 1" position="1.5 0 -1" rotation="90 180 0"></a-image>
 </a-marker>   
+<a-marker type='barcode' value='19' smooth='false'>
+        <a-image src="#walkc2-1" opacity="0.7" scale="-3 2 1" position="1.5 0 -1" rotation="90 180 0"></a-image>
+</a-marker>
+<a-marker type='barcode' value='20' smooth='false'>
+        <a-image src="#walkc-2" opacity="0.7" scale="-3 2 1" position="1.5 0 -1" rotation="90 180 0"></a-image>
+</a-marker>
 
 <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
 <a-entity camera></a-entity>
